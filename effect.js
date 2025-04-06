@@ -23,12 +23,10 @@ $('document').ready(function() {
     });
 
     $('#turn_on').click(function() {
-        $('#bulb_yellow').addClass('bulb-glow-yellow');
         $('#bulb_red').addClass('bulb-glow-red');
         $('#bulb_blue').addClass('bulb-glow-blue');
         $('#bulb_green').addClass('bulb-glow-green');
         $('#bulb_pink').addClass('bulb-glow-pink');
-        $('#bulb_orange').addClass('bulb-glow-orange');
         $('body').addClass('peach');
         $(this).fadeOut('slow').delay(5000).promise().done(function() {
             $('#play').fadeIn('slow');
@@ -37,12 +35,10 @@ $('document').ready(function() {
     $('#play').click(function() {
         var audio = $('.song')[0];
         audio.play();
-        $('#bulb_yellow').addClass('bulb-glow-yellow');
         $('#bulb_red').addClass('bulb-glow-red-after');
         $('#bulb_blue').addClass('bulb-glow-blue-after');
         $('#bulb_green').addClass('bulb-glow-green-after');
         $('#bulb_pink').addClass('bulb-glow-pink-after');
-        $('#bulb_orange').addClass('bulb-glow-orange');
         $('body').css('backgroud-color', '#FFF');
         $('body').addClass('peach-after');
         $(this).fadeOut('slow').delay(6000).promise().done(function() {
@@ -244,8 +240,8 @@ $('document').ready(function() {
     });
     $('#wish_message').click(function() {
         vw = $(window).width() / 2;
-
         // Stop animations and reset IDs
+        // Stop animations and reset IDs (same as original)
         $('#b0,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9,#b10,#b11,#b12').stop();
         $('#b0').attr('id', 'b00');
         $('#b2').attr('id', 'b22');
@@ -260,19 +256,26 @@ $('document').ready(function() {
         $('#b11').attr('id', 'b1111');
         $('#b12').attr('id', 'b1212');
 
-        // Animate balloons into a centered, evenly spaced line
-        $('#b00').animate({ top: 240, left: vw - 550 }, 500); // Far left
-        $('#b22').animate({ top: 240, left: vw - 450 }, 500);
-        $('#b33').animate({ top: 240, left: vw - 350 }, 500);
-        $('#b44').animate({ top: 240, left: vw - 250 }, 500);
-        $('#b55').animate({ top: 240, left: vw - 150 }, 500);
-        $('#b66').animate({ top: 240, left: vw - 50 }, 500);
-        $('#b77').animate({ top: 240, left: vw + 50 }, 500); // Center-right
-        $('#b88').animate({ top: 240, left: vw + 150 }, 500);
-        $('#b99').animate({ top: 240, left: vw + 250 }, 500);
-        $('#b1010').animate({ top: 240, left: vw + 350 }, 500);
-        $('#b1111').animate({ top: 240, left: vw + 450 }, 500);
-        $('#b1212').animate({ top: 240, left: vw + 550 }, 500); // Far right
+        // Define vertical positions for the 2 rows
+        const topRowY = 180; // Top row Y position
+        const bottomRowY = 300; // Bottom row Y position
+        const horizontalSpacing = 100; // Space between items
+        const startLeft = vw - 550; // Starting X position (far left)
+
+        // Animate balloons into 2 rows (6 per row)
+        $('#b00').animate({ top: topRowY, left: startLeft }, 500); // Top row, far left
+        $('#b22').animate({ top: topRowY, left: startLeft + horizontalSpacing * 1 }, 500);
+        $('#b33').animate({ top: topRowY, left: startLeft + horizontalSpacing * 2 }, 500);
+        $('#b44').animate({ top: topRowY, left: startLeft + horizontalSpacing * 3 }, 500);
+        $('#b55').animate({ top: topRowY, left: startLeft + horizontalSpacing * 4 }, 500);
+        $('#b66').animate({ top: topRowY, left: startLeft + horizontalSpacing * 5 }, 500);
+        $('#b77').animate({ top: topRowY, left: startLeft + horizontalSpacing * 6 }, 500);
+
+        $('#b88').animate({ top: bottomRowY, left: startLeft + horizontalSpacing * 1 }, 500);
+        $('#b99').animate({ top: bottomRowY, left: startLeft + horizontalSpacing * 2 }, 500);
+        $('#b1010').animate({ top: bottomRowY, left: startLeft + horizontalSpacing * 3 }, 500);
+        $('#b1111').animate({ top: bottomRowY, left: startLeft + horizontalSpacing * 4 }, 500);
+        $('#b1212').animate({ top: bottomRowY, left: startLeft + horizontalSpacing * 5 }, 500);
 
         // Fade in message and balloons
         $('.balloons').css('opacity', '0.9');
