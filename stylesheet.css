@@ -1313,6 +1313,156 @@ o @keyframes bannar_come {
     }
 }
 
+@media (max-width: 768px) {
+    .balloon-container {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        z-index: 99;
+    }
+    .balloons {
+        width: 30px !important;
+        height: auto !important;
+        margin: 0 !important;
+        background-size: 30px auto !important;
+    }
+    #b0,
+    #b2,
+    #b3,
+    #b4,
+    #b5,
+    #b6,
+    #b7,
+    #b8,
+    #b9,
+    #b10,
+    #b11,
+    #b12,
+    #b00,
+    #b22,
+    #b33,
+    #b44,
+    #b55,
+    #b66,
+    #b77,
+    #b88,
+    #b99,
+    #b1010,
+    #b1111,
+    #b1212 {
+        width: 30px !important;
+        height: auto !important;
+        background-size: 30px auto !important;
+    }
+    .balloons h2 {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .balloon-container {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        z-index: 99;
+    }
+    .balloons {
+        width: 30px !important;
+        height: auto !important;
+        margin: 0 !important;
+        background-size: 30px auto !important;
+    }
+    #b0,
+    #b2,
+    #b3,
+    #b4,
+    #b5,
+    #b6,
+    #b7,
+    #b8,
+    #b9,
+    #b10,
+    #b11,
+    #b12,
+    #b00,
+    #b22,
+    #b33,
+    #b44,
+    #b55,
+    #b66,
+    #b77,
+    #b88,
+    #b99,
+    #b1010,
+    #b1111,
+    #b1212 {
+        width: 30px !important;
+        height: auto !important;
+        background-size: 30px auto !important;
+    }
+    .balloons h2 {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .balloon-container {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        z-index: 99;
+    }
+    .balloons {
+        width: 30px !important;
+        height: auto !important;
+        margin: 0 !important;
+        background-size: 30px auto !important;
+    }
+    #b0,
+    #b2,
+    #b3,
+    #b4,
+    #b5,
+    #b6,
+    #b7,
+    #b8,
+    #b9,
+    #b10,
+    #b11,
+    #b12,
+    #b00,
+    #b22,
+    #b33,
+    #b44,
+    #b55,
+    #b66,
+    #b77,
+    #b88,
+    #b99,
+    #b1010,
+    #b1111,
+    #b1212 {
+        width: 30px !important;
+        height: auto !important;
+        background-size: 30px auto !important;
+    }
+    .balloons h2 {
+        font-size: 16px !important;
+    }
+}
+
 .balloons-rotate-behaviour-one {
     -webkit-animation: balloons_rotate_one linear 10s infinite;
     -webkit-transform: rotate(30deg);
