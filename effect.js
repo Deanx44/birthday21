@@ -222,18 +222,18 @@ $('document').ready(function() {
 
         // Animate balloons with dynamic spacing
         // Position 2 balloons on top (y=180) with tighter spacing
-        $('#b00').animate({ top: 180, left: vw - (1 * spacing) }, 500);
-        $('#b22').animate({ top: 180, left: vw + (0 * spacing) }, 500);
+        $('#b00').animate({ top: 180, left: vw - (2 * spacing) }, 500);
+        $('#b22').animate({ top: 180, left: vw + (1 * spacing) }, 500);
 
         // Position 10 balloons on bottom (y=300) with tighter spacing
-        $('#b44').animate({ top: 300, left: vw - (2 * spacing) }, 500);
-        $('#b55').animate({ top: 300, left: vw - (1.5 * spacing) }, 500);
-        $('#b66').animate({ top: 300, left: vw - (1 * spacing) }, 500);
-        $('#b77').animate({ top: 300, left: vw - (0.5 * spacing) }, 500);
+        $('#b44').animate({ top: 300, left: vw - (3 * spacing) }, 500);
+        $('#b55').animate({ top: 300, left: vw - (2 * spacing) }, 500);
+        $('#b66').animate({ top: 300, left: vw - (1.5 * spacing) }, 500);
+        $('#b77').animate({ top: 300, left: vw - (1 * spacing) }, 500);
         $('#b88').animate({ top: 300, left: vw }, 500);
-        $('#b99').animate({ top: 300, left: vw + (0.5 * spacing) }, 500);
-        $('#b1010').animate({ top: 300, left: vw + (1 * spacing) }, 500);
-        $('#b1111').animate({ top: 300, left: vw + (1.5 * spacing) }, 500);
+        $('#b99').animate({ top: 300, left: vw + (1 * spacing) }, 500);
+        $('#b1010').animate({ top: 300, left: vw + (1.5 * spacing) }, 500);
+        $('#b1111').animate({ top: 300, left: vw + (2 * spacing) }, 500);
 
         // Fade in message and balloons
         $('.balloons').css('opacity', '0.9');
