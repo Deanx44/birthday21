@@ -1290,7 +1290,7 @@ o @keyframes bannar_come {
 /* Individual Balloons */
 
 .balloons {
-    width: 20px;
+    width: 30px;
     height: auto;
     margin: 5px;
     transition: all 0.5s ease;
